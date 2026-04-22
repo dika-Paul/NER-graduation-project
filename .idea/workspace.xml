@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f758aa7-4d7d-42ab-81f1-fde8f131d485" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/NRE_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc_test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/bert_softmax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/bilstm_crf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/matscibert_softmax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_bert_softmax.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_bilstm_crf.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_matscibert_softmax.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/train_bert-softmax.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/train_bilstm-crf.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/train_matscibert-softmax.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/bert/data_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/bilstm_crf/data_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/convert_matscholar_to_bio.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="55" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3BhbOgDK3l4zRzXC1vX52i6mJQj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/大学学习/毕设/26毕设/NRE_project/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\大学学习\毕设\26毕设\NRE_project\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\大学学习\毕设\26毕设\NRE_project\test" />
+      <recent name="E:\大学学习\毕设\26毕设\NRE_project\train" />
+      <recent name="E:\大学学习\毕设\26毕设\NRE_project\utils\bilstm_crf" />
+      <recent name="E:\大学学习\毕设\26毕设\NRE_project\data\conll2003_raw\data" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-PY-261.22158.340" />
+        <option value="bundled-python-sdk-b63d5a1f7c97-b61e75351b1f-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.22158.340" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="d41f82f4-6874-48dd-b4c7-5ce4fc426b0b" name="更改" comment="" />
+      <created>1774944218208</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774944218208</updated>
+      <workItem from="1774944219275" duration="8354000" />
+      <workItem from="1774956007149" duration="900000" />
+      <workItem from="1774957503158" duration="1154000" />
+      <workItem from="1774958851883" duration="9215000" />
+      <workItem from="1775009440770" duration="21561000" />
+      <workItem from="1775047420679" duration="8558000" />
+      <workItem from="1775111238461" duration="29000" />
+      <workItem from="1775131530360" duration="9145000" />
+      <workItem from="1775702384906" duration="5788000" />
+      <workItem from="1775711208631" duration="2363000" />
+      <workItem from="1775713582646" duration="10480000" />
+      <workItem from="1775729882557" duration="3153000" />
+      <workItem from="1775733671887" duration="71000" />
+      <workItem from="1775733757785" duration="7976000" />
+      <workItem from="1775742100632" duration="8466000" />
+      <workItem from="1775788656877" duration="349000" />
+      <workItem from="1775823205004" duration="70000" />
+      <workItem from="1776157801851" duration="2200000" />
+      <workItem from="1776580737372" duration="88000" />
+      <workItem from="1776847239838" duration="341000" />
+      <workItem from="1776847590917" duration="594000" />
+      <workItem from="1776848192748" duration="576000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
