@@ -137,3 +137,70 @@ def evaluate_bert_softmax(model, dataloader, id2label, device):
     f1 = f1_score(all_true_labels, all_pred_labels)
 
     return avg_loss, precision, recall, f1, all_true_labels, all_pred_labels
+
+
+@torch.no_grad()
+def evaluate_bert_bilstm_crf(model, dataloader, id2label, device):
+    """
+    在验证集或测试集上评估并行 BERT + BiLSTM + CRF 模型。
+
+    说明：
+        1. loss 按 batch 维度求平均，与当前项目中其它评估函数保持一致。
+        2. 指标在 CRF 解码后的词级标签序列上计算。
+    """
+    model.eval()
+
+    total_loss = 0.0
+    total_sentences = 0
+
+    all_true_labels = []
+    all_pred_labels = []
+
+    for batch in dataloader:
+        input_ids = batch["input_ids"].to(device)
+        attention_mask = batch["attention_mask"].to(device)
+        word_input_ids = batch["word_input_ids"].to(device)
+        word_attention_mask = batch["word_attention_mask"].to(device)
+        first_subword_positions = batch["first_subword_positions"].to(device)
+        labels = batch["labels"].to(device)
+        token_type_ids = batch.get("token_type_ids")
+
+        if token_type_ids is not None:
+            token_type_ids = token_type_ids.to(device)
+
+        batch_size = input_ids.size(0)
+
+        outputs = model(
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            word_input_ids=word_input_ids,
+            word_attention_mask=word_attention_mask,
+            first_subword_positions=first_subword_positions,
+            labels=labels,
+            token_type_ids=token_type_ids,
+        )
+
+        loss = outputs["loss"]
+        batch_pred_ids = outputs["predictions"]
+
+        total_loss += loss.item() * batch_size
+        total_sentences += batch_size
+
+        for i in range(batch_size):
+            seq_len = int(word_attention_mask[i].sum().item())
+
+            gold_ids = labels[i, :seq_len].tolist()
+            pred_ids = batch_pred_ids[i]
+
+            true_labels = [id2label[int(gold_id)] for gold_id in gold_ids]
+            pred_labels = [id2label[int(pred_id)] for pred_id in pred_ids]
+
+            all_true_labels.append(true_labels)
+            all_pred_labels.append(pred_labels)
+
+    avg_loss = total_loss / total_sentences if total_sentences > 0 else 0.0
+    precision = precision_score(all_true_labels, all_pred_labels)
+    recall = recall_score(all_true_labels, all_pred_labels)
+    f1 = f1_score(all_true_labels, all_pred_labels)
+
+    return avg_loss, precision, recall, f1, all_true_labels, all_pred_labels
