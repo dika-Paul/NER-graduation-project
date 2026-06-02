@@ -6,3 +6,15 @@ AGENTS.md
 models/*.pt
 embeddings/
 data/
+
+# Python/runtime generated files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Local IDE and notebook state
+.idea/
+.ipynb_checkpoints/
+
+# Generated presentation, spreadsheet, chart and temporary outputs
+outputs/
