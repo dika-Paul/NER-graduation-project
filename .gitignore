@@ -5,7 +5,11 @@ AGENTS.md
 *.yaml
 models/*.pt
 embeddings/
-data/
+
+# Keep training datasets in the repository, but skip generated caches and source PDFs.
+data/**/__pycache__/
+data/**/.cache/
+data/GPT_data_source/origional_pdf/
 
 # Python/runtime generated files
 __pycache__/
