@@ -2,8 +2,8 @@ import math
 import shutil
 from pathlib import Path
 
-from graph.graph_state import GraphState
-from graph.node.get_excel_batch_node import read_openalex_excel_records
+from ..graph_state import GraphState
+from .get_excel_batch_node import read_openalex_excel_records
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]

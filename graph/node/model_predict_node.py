@@ -5,7 +5,7 @@ import torch
 from torch.utils.data import DataLoader, Dataset
 from transformers import AutoTokenizer
 
-from graph.graph_state import GraphState
+from ..graph_state import GraphState
 from models.bert_bilstm_crf import BertBiLstmCrfNER
 from models.bert_softmax import BertSoftmaxNER
 from models.bilstm_crf import BiLSTM_CRF

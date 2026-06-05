@@ -3,7 +3,7 @@ from typing import Any
 from langchain_core.output_parsers import JsonOutputParser
 from langgraph.runtime import Runtime
 
-from graph.graph_state import GraphContext, GraphState
+from ..graph_state import GraphContext, GraphState
 
 
 LLM_MAX_CONCURRENCY = 6

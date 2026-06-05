@@ -4,7 +4,7 @@ import random
 from pathlib import Path
 from typing import Any
 
-from graph.graph_state import GraphState
+from ..graph_state import GraphState
 
 
 REQUIRED_SAMPLE_FIELDS = ("sample_id", "text", "tokens")

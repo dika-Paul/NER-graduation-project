@@ -1,6 +1,6 @@
 
 
-from graph.graph_state import GraphState
+from ..graph_state import GraphState
 
 
 def _safe_float(value) -> float | None:

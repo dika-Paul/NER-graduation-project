@@ -1,4 +1,4 @@
-from graph.graph_state import GraphState
+from ..graph_state import GraphState
 
 
 def iteration_update_node(graph_state: GraphState) -> dict:

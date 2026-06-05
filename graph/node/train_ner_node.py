@@ -13,7 +13,7 @@ from evaluate import (
     evaluate_bert_softmax,
     evaluate_bilstm_crf,
 )
-from graph.graph_state import GraphContext, GraphState
+from ..graph_state import GraphContext, GraphState
 from models.bert_bilstm_crf import BertBiLstmCrfNER
 from models.bert_softmax import BertSoftmaxNER
 from models.bilstm_crf import BiLSTM_CRF

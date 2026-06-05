@@ -3,34 +3,34 @@ from typing import Literal
 from langgraph.graph import END, START, StateGraph
 from langgraph.runtime import Runtime
 
-from graph.graph_state import (
+from .graph_state import (
     AddTrainInputState,
     GraphContext,
     GraphState,
     InputState,
     OutputState,
 )
-from graph.node.add_train_data_node import add_train_data_node
-from graph.node.decision_node import decision_node
-from graph.node.distance_compute_node import (
+from .node.add_train_data_node import add_train_data_node
+from .node.decision_node import decision_node
+from .node.distance_compute_node import (
     judge_res_distance_compute_node,
     labeled_res_distance_compute_node,
 )
-from graph.node.get_excel_batch_node import get_excel_batch_node
-from graph.node.get_unlabeled_data_node import get_unlabeled_data_node
-from graph.node.initialize_add_train_node import initialize_add_train_node
-from graph.node.initialize_node import initialize_node
-from graph.node.iteration_update import iteration_update_node
-from graph.node.llm_predict_node import (
+from .node.get_excel_batch_node import get_excel_batch_node
+from .node.get_unlabeled_data_node import get_unlabeled_data_node
+from .node.initialize_add_train_node import initialize_add_train_node
+from .node.initialize_node import initialize_node
+from .node.iteration_update import iteration_update_node
+from .node.llm_predict_node import (
     judge_llm_predict_node,
     judge_span2dict_node,
     llm_predict_node,
     primary_span2dict_node,
 )
-from graph.node.model_predict_node import BIO2dict_node, model_predict_node
-from graph.node.train_ner_node import train_ner_node
-from graph.node.trace_node import is_trace_enabled, trace_node
-from graph.node.update_model_node import update_model_node
+from .node.model_predict_node import BIO2dict_node, model_predict_node
+from .node.train_ner_node import train_ner_node
+from .node.trace_node import is_trace_enabled, trace_node
+from .node.update_model_node import update_model_node
 
 
 def should_judge(

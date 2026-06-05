@@ -2,7 +2,7 @@
 from pathlib import Path
 from typing import Any
 
-from graph.graph_state import GraphState
+from ..graph_state import GraphState
 
 
 ACCEPT_NER = "accept_ner"

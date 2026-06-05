@@ -3,7 +3,7 @@ from typing import Any
 
 from rapidfuzz.distance import Levenshtein
 
-from graph.graph_state import GraphState
+from ..graph_state import GraphState
 
 
 def _normalize_entity_dict(entity_dict: dict[str, Any] | None) -> str:

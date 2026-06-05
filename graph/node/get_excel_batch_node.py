@@ -4,7 +4,7 @@ from pathlib import Path, PurePosixPath
 from typing import Any
 from xml.etree import ElementTree
 
-from graph.graph_state import GraphState
+from ..graph_state import GraphState
 
 
 MAIN_NS = "http://schemas.openxmlformats.org/spreadsheetml/2006/main"

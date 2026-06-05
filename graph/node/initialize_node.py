@@ -1,7 +1,7 @@
 from pathlib import Path
 import shutil
 
-from graph.graph_state import GraphState
+from ..graph_state import GraphState
 
 
 INITIAL_TRAIN_POOL_PATH = (

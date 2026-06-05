@@ -1,4 +1,4 @@
-from graph.graph_state import GraphState
+from ..graph_state import GraphState
 
 
 PRECISION_STABLE_DROP = 0.02

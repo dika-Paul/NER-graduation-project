@@ -4,7 +4,7 @@ from typing import Any, Callable
 
 from langgraph.runtime import Runtime
 
-from graph.graph_state import GraphContext, GraphState
+from ..graph_state import GraphContext, GraphState
 
 
 def is_trace_enabled(runtime: Runtime[GraphContext] | None) -> bool:
